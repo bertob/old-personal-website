@@ -23,6 +23,25 @@ nav a {
 	text-align: center;
 	line-height: 1.2em;	
 }
+.header {
+	font-size: 3.125em;
+	font-weight: 200;
+	text-align: center;
+	line-height: 1.2em;	
+	clear: both;
+}
+.smallinfo {
+	font-size: 1.3em;
+	text-align: center;	
+}
+.excerpt {
+	font-size: 1.6em;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.5em;
+	margin: 50px 0 70px 0;
+	font-style: italic;
+}
 /* ############ LAYOUT ############ */
 body {
 	max-width: 800px;
@@ -62,7 +81,7 @@ nav a:hover {
 	margin-top: 1.6em;
 	margin-bottom: 2.4em;
 }
-#footer {
+footer {
 	text-align: center;
 	height: 130px;
 }
@@ -73,7 +92,10 @@ nav a:hover {
 	margin-top: 70px;
 }
 #licenseinfo {
-	max-width: 600px;
+	max-width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* ############ HACKS ############ */
 #logo img {
