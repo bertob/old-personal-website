@@ -5,8 +5,9 @@
 	color: #333;
 }
 p {
-	font-size: 1.38em;
-	line-height: 1.55em;
+	font-size: 1.33em;
+	line-height: 1.65em;
+	letter-spacing: 0.008em;
 }
 nav a {
 	font-size: 1.25em;
@@ -21,7 +22,7 @@ nav a {
 	font-size: 2.7em;
 	font-weight: 200;
 	text-align: center;
-	line-height: 1.2em;	
+	line-height: 1.2em;
 }
 .header {
 	font-size: 3.125em;
@@ -32,7 +33,8 @@ nav a {
 }
 .smallinfo {
 	font-size: 1.3em;
-	text-align: center;	
+	text-align: center;
+	color: #666;
 }
 .excerpt {
 	font-size: 1.6em;
@@ -59,7 +61,7 @@ body {
 	max-width: 780px;
 	margin: auto;		
 }
-#header {
+header {
 	height: 110px;
 }
 nav a {
@@ -72,7 +74,7 @@ nav a:hover {
 }
 #topleft > * {
 	float: left;
-	margin-top: 37.5
+	margin-top: 37.5;
 }
 #topright {
 	float: right;
@@ -82,30 +84,34 @@ nav a:hover {
 	margin-left: 20px;
 }
 .blogpost {
-	clear: both;
-	height: 160px;
+	clear: both;	
+	height: 180px;
 	width: 100%;
-	background-color: blue;
 }
 .blogpost > * {
 	float: left;
-	background-color: green;
 }
 .blogpostimg {
+	/*postition: absolute;
+	top: 50%;
+	margin-top: 60px;*/
+	margin-right: 40px;
 	margin-top: 20px;
 	margin-left: 20px;
-	margin-right: 40px;
-}
-.blogposttext {
 	
 }
+.blogposttext {
+	width: 600px;
+}
 .blogposttitle {
-	font-size: 2.3em;
+	font-size: 1.9em;
 	font-weight: 200;
+	margin: 6px 0 0;
 }
 .blogpostexcerpt {
-	font-size: 0.8em;
+	font-size: 0.75em;
 	font-weight: 400;
+	margin-top: -10px;
 }
 .clear {
 	clear: both;
@@ -119,10 +125,10 @@ nav a:hover {
 }
 footer {
 	text-align: center;
-	height: 130px;
+	height: 170px;
 }
 #license {
-	margin-top: -10px;
+	margin-top: 10px;
 }
 #licenseicons {
 	margin-top: 70px;
