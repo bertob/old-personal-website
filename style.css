@@ -42,6 +42,13 @@ nav a {
 	margin: 50px 0 70px 0;
 	font-style: italic;
 }
+.imgcaption {
+	font-size: 1.15em;
+	font-style: italic;
+	line-height: 1.5em;
+	color: #666;
+	margin-top: 13px;
+}
 /* ############ LAYOUT ############ */
 body {
 	max-width: 800px;
@@ -90,6 +97,7 @@ footer {
 }
 #licenseicons {
 	margin-top: 70px;
+	margin-bottom: 10px;
 }
 #licenseinfo {
 	max-width: 500px;
