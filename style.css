@@ -81,6 +81,35 @@ nav a:hover {
 #topright > * {
 	margin-left: 20px;
 }
+.blogpost {
+	clear: both;
+	height: 160px;
+	width: 100%;
+	background-color: blue;
+}
+.blogpost > * {
+	float: left;
+	background-color: green;
+}
+.blogpostimg {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+.blogposttext {
+	
+}
+.blogposttitle {
+	font-size: 2.3em;
+	font-weight: 200;
+}
+.blogpostexcerpt {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+.clear {
+	clear: both;
+}
 .info {
 	max-width: 760px;
 	margin-left: auto;
