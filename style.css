@@ -51,6 +51,10 @@ nav a {
 	color: #666;
 	margin-top: 13px;
 }
+.nocaptionimg {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 /* ############ LAYOUT ############ */
 body {
 	max-width: 800px;
@@ -59,7 +63,7 @@ body {
 }
 #wrap {
 	max-width: 780px;
-	margin: auto;		
+	margin: auto;
 }
 header {
 	height: 110px;
@@ -120,12 +124,12 @@ nav a:hover {
 .workitemrow {
 	height: 240px;
 	margin-bottom: 26px;
+	background-color: red;
 }
 .workitem {
 	display: inline-block;
-	height: 240px;
-	margin-right: 26px;
-	width: 240px;
+	margin-right: 4.15%;/*26px*/
+	width: 30%;
 }
 .workitem:last-child {
 	margin-right: 0px;
@@ -167,7 +171,7 @@ nav a:hover {
 }
 footer {
 	text-align: center;
-	height: 130px;
+	height: 160px;
 }
 #license {
 	margin-top: 10px;
