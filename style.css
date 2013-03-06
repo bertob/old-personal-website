@@ -118,13 +118,17 @@ nav a:hover {
 	clear: both;
 }
 .workitemrow {
-	
+	height: 240px;
+	margin-bottom: 26px;
 }
 .workitem {
-	float: left;
+	display: inline-block;
 	height: 240px;
+	margin-right: 26px;
 	width: 240px;
-	margin-right: ;
+}
+.workitem:last-child {
+	margin-right: 0px;
 }
 .workimg {
 	position: absolute;
@@ -137,7 +141,7 @@ nav a:hover {
 	background: rgba(0, 0, 0, 0.6);
 }
 .workitem:hover > div {
-	display: block;
+	display: inline;
 	background: rgb(0, 0, 0) 		transparent;	
 }
 .overlaytext {
