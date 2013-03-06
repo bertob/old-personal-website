@@ -117,9 +117,14 @@ nav a:hover {
 .clear {
 	clear: both;
 }
+.workitemrow {
+	
+}
 .workitem {
+	float: left;
 	height: 240px;
 	width: 240px;
+	margin-right: ;
 }
 .workimg {
 	position: absolute;
