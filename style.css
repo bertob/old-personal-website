@@ -117,6 +117,38 @@ nav a:hover {
 .clear {
 	clear: both;
 }
+.workitem {
+	height: 240px;
+	width: 240px;
+}
+.workimg {
+	position: absolute;
+}
+.workoverlay {
+	display: none;
+	position: absolute;
+	width: 240px;
+	background: rgb(0, 0, 0) 		transparent;
+	background: rgba(0, 0, 0, 0.6);
+}
+.workitem:hover > div {
+	display: block;
+	background: rgb(0, 0, 0) 		transparent;	
+}
+.overlaytext {
+	margin-left: 5%;
+	margin-top: 3%;
+}
+.worktitle {
+	font-size: 1.4em;
+	font-weight: 400;
+	color: white;
+}
+.workinfo {
+	font-size: 0.7em;
+	font-weight: 400;
+	color: white;
+}
 .info {
 	max-width: 760px;
 	margin-left: auto;
