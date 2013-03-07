@@ -65,6 +65,18 @@ body {
 	max-width: 780px;
 	margin: auto;
 }
+.clear {
+	clear: both;
+}
+/* |||||||||||| TEXT PAGES |||||||||||| */
+.info {
+	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.6em;
+	margin-bottom: 2.4em;
+}
+/* |||||||||||| HEADER |||||||||||| */
 header {
 	height: 110px;
 }
@@ -87,6 +99,7 @@ nav a:hover {
 #topright > * {
 	margin-left: 20px;
 }
+/* |||||||||||| BLOG |||||||||||| */
 .blogpost {
 	clear: both;	
 	height: 180px;
@@ -118,9 +131,8 @@ nav a:hover {
 	font-weight: 400;
 	margin-top: -10px;
 }
-.clear {
-	clear: both;
-}
+
+/* |||||||||||| WORK |||||||||||| */
 .workitemrow {
 	height: 240px;
 	margin-bottom: 26px;
@@ -129,7 +141,7 @@ nav a:hover {
 .workitem {
 	display: inline-block;
 	margin-right: 4.15%;/*26px*/
-	width: 30%;
+	width: 30%
 }
 .workitem:last-child {
 	margin-right: 0px;
@@ -162,13 +174,7 @@ nav a:hover {
 	font-weight: 400;
 	color: white;
 }
-.info {
-	max-width: 760px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1.6em;
-	margin-bottom: 2.4em;
-}
+/* |||||||||||| FOOTER |||||||||||| */
 footer {
 	text-align: center;
 	height: 160px;
