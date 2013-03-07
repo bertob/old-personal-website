@@ -156,14 +156,18 @@ nav a:hover {
 	width: 240px;
 	background: rgb(0, 0, 0) transparent;
 	background: rgba(0, 0, 0, 0.6);
+	transition-property : opacity; 
+	transition-duration : 0.7s; 
 }
 .workitem:hover > div {
 	display: inline;
 	opacity: 1;
 	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.6);
 	transition-property : opacity; 
 	transition-duration : 0.3s; 
 }
+
 .overlaytext {
 	margin-left: 5%;
 	margin-top: 3%;
