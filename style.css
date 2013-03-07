@@ -55,6 +55,17 @@ nav a {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
+.worktitle {
+	font-size: 1.2em;
+	font-weight: 400;
+	color: white;
+}
+.workinfo {
+	font-size: 0.57em;
+	font-weight: 400;
+	color: white;
+	margin-top: -10px;
+}
 /* ############ LAYOUT ############ */
 body {
 	max-width: 800px;
@@ -67,6 +78,14 @@ body {
 }
 .clear {
 	clear: both;
+}
+/* |||||||||||| TEXT PAGES |||||||||||| */
+.frontpagework img {
+	width: 180px;
+	margin-right: 16px;
+}
+.frontpagework img:last-child {
+	margin-right: 0px;
 }
 /* |||||||||||| TEXT PAGES |||||||||||| */
 .info {
@@ -141,7 +160,7 @@ nav a:hover {
 .workitem {
 	display: inline-block;
 	margin-right: 4.15%;/*26px*/
-	padding-bottom: 26px;	
+	padding-bottom: 26px;
 	width: 30%
 }
 .workitem:last-child {
@@ -168,20 +187,8 @@ nav a:hover {
 	transition-property : opacity; 
 	transition-duration : 0.3s; 
 }
-
 .overlaytext {
-	margin-left: 5%;
-	margin-top: 3%;
-}
-.worktitle {
-	font-size: 1.4em;
-	font-weight: 400;
-	color: white;
-}
-.workinfo {
-	font-size: 0.7em;
-	font-weight: 400;
-	color: white;
+	margin-left: 20px;
 }
 /* |||||||||||| FOOTER |||||||||||| */
 footer {
