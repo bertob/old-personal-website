@@ -56,9 +56,11 @@ nav a {
 	margin-bottom: 15px;
 }
 .worktitle {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 400;
 	color: white;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 .workinfo {
 	font-size: 0.57em;
@@ -171,21 +173,35 @@ nav a:hover {
 }
 .workoverlay {
 	display: block;
-	opacity: 0;
+	opacity: 0.3;
 	position: absolute;
 	width: 240px;
 	background: rgb(0, 0, 0) transparent;
 	background: rgba(0, 0, 0, 0.6);
-	transition-property : opacity;
+	
+	transition: all 0.5s ease-out;
+	/*transition-property : opacity;
 	transition-duration : 0.5s;
+	*/
+	
+	transform: translateY(240px);
 }
-.workitem:hover > div {
+.workitem:hover > div.workoverlay {
 	display: inline;
 	opacity: 1;
 	background: rgb(0, 0, 0) transparent;
 	background: rgba(0, 0, 0, 0.6);
-	transition-property : opacity; 
-	transition-duration : 0.3s; 
+	
+	transition: all 0.3s ease-out;
+	/*transition-property : opacity; 
+	transition-duration : 0.3s;
+	*/ 
+
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 1;
+	transform: translateY(118%);	
 }
 .overlaytext {
 	margin-left: 20px;
