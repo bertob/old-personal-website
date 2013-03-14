@@ -206,6 +206,29 @@ nav a:hover {
 .overlaytext {
 	margin-left: 20px;
 }
+.contact {
+	background-color: white;
+	border: none;
+	font-style: italic;
+	padding: 3%;
+}
+.contact.subject {
+	font-size: 1.6em;
+	max-width: 100%;
+}
+.contact.message {
+	width: 100%;
+}
+.contact.name {
+	
+}
+.contact.email {
+	
+}
+.submitbtn {
+	background-color: #d2d2d2;
+	border: none;
+}
 /* |||||||||||| FOOTER |||||||||||| */
 footer {
 	text-align: center;
