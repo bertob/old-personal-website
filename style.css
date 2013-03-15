@@ -32,7 +32,7 @@ nav a {
 	clear: both;
 }
 .smallinfo {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	text-align: center;
 	color: #666;
 }
@@ -81,7 +81,7 @@ body {
 .clear {
 	clear: both;
 }
-/* |||||||||||| TEXT PAGES |||||||||||| */
+/* |||||||||||| FRONT PAGE |||||||||||| */
 .frontpagework img {
 	width: 180px;
 	margin-right: 16px;
@@ -122,7 +122,7 @@ nav a:hover {
 }
 /* |||||||||||| BLOG |||||||||||| */
 .blogpost {
-	clear: both;	
+	clear: both;
 	height: 180px;
 	width: 100%;
 }
