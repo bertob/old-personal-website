@@ -206,6 +206,7 @@ nav a:hover {
 .overlaytext {
 	margin-left: 20px;
 }
+/* |||||||||||| CONTACT |||||||||||| */
 .contact {
 	background-color: white;
 	border: none;
@@ -229,21 +230,27 @@ nav a:hover {
 	color: #333;
 	font-style: normal;
 }
+.contact:after {
+	color: #333;
+	font-style: normal;
+}
 .contact.name {
-	width: 29%;
-	margin-right: 3.3%;
+	width: 30%;
+	margin-right: 4.8%;
+	float: left;
 }
 .contact.email {
-	width: 29%;
-	margin-right: 3.3%;
+	width: 30%;
+	margin-right: 4.8%;
+	float: left;
 }
 .submitbtn {
 	font-size: 1.2em;
 	background-color: #d2d2d2;
 	border: none;
-	width: 29%;
-	margin-left: 3.3%;
-	padding: 3%;
+	width: 30%;
+	padding: 1.8%;
+	float: right;
 }
 /* |||||||||||| FOOTER |||||||||||| */
 footer {
