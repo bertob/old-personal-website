@@ -291,6 +291,27 @@ footer {
 .social *:first-child {
 	margin-right: none;
 }
+
+
+
+/* @@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@ */
+
+/* 800-600 TABLET */
+@media screen and (max-width: 860px) {
+	* {
+		background-color: #aaa;
+	}
+	
+	
+}
+/* 600-400 PHONE */
+@media screen and (max-width: 400px) {
+	* {
+		background-color: #888;
+	}
+}
+
+
 /*
 @media screen and (max-width: 900px) {
 	* {
