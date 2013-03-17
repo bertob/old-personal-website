@@ -81,6 +81,31 @@ body {
 .clear {
 	clear: both;
 }
+/* |||||||||||| HEADER |||||||||||| */
+header {
+	height: 110px;
+}
+nav a {
+	margin-right: 12px;
+	padding: 10px 16px;
+	background-color: none;
+}
+nav a:hover {
+	background-color: #e2e2e2;
+}
+#topleft > * {
+	float: left;
+	margin-top: 37.5;
+	margin-left: 10px;
+}
+#topright {
+	float: right;
+	margin-top: 40px;
+	margin-right: 10px;
+}
+#topright > * {
+	margin-left: 20px;
+}
 /* |||||||||||| FRONT PAGE |||||||||||| */
 .frontpagework img {
 	width: 180px;
@@ -97,34 +122,15 @@ body {
 	margin-top: 1.6em;
 	margin-bottom: 2.4em;
 }
-/* |||||||||||| HEADER |||||||||||| */
-header {
-	height: 110px;
-}
-nav a {
-	margin-right: 12px;
-	padding: 10px 16px;
-	background-color: none;
-}
-nav a:hover {
-	background-color: #e2e2e2;	
-}
-#topleft > * {
-	float: left;
-	margin-top: 37.5;
-}
-#topright {
-	float: right;
-	margin-top: 40px;
-}
-#topright > * {
-	margin-left: 20px;
-}
 /* |||||||||||| BLOG |||||||||||| */
 .blogpost {
 	clear: both;
-	height: 180px;
+	height: auto;/*180px;*/
 	width: 100%;
+	margin-top: 30px;
+}
+.blogpost:first-child {
+	margin-top: 0px;
 }
 .blogpost > * {
 	float: left;
@@ -258,6 +264,11 @@ footer {
 	text-align: center;
 	height: 160px;
 }
+#licenseinfo {
+	font-size: 0.85em;
+	padding-left: 6%;
+	padding-right: 6%;
+}
 #license {
 	margin-top: 10px;
 }
@@ -272,7 +283,7 @@ footer {
 	margin-right: auto;
 }
 /* ############ HACKS ############ */
-#logo img {
+#logo {
 	height: 35px;
 	margin-top: -6px;
 	margin-bottom: 37.5px;
@@ -301,6 +312,19 @@ footer {
 	#page {
 		background-color: #aaa;
 	}
+	
+	#page {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	/* |||||||||||| HEADER |||||||||||| */
+	#topleft {
+		margin-left: 20px;
+	}
+	#topright {
+		margin-right: 20px;
+		margin-top: 38px;
+	}
 		
 	/* |||||||||||| BLOG |||||||||||| */
 	.blogpost {
@@ -317,7 +341,7 @@ footer {
 		float: left;
 	}
 	.blogpostimg {
-		width: 18%;
+		width: 15%;
 		margin-right: 2%;/*30px;*/
 	}
 	.blogposttext {
@@ -327,86 +351,116 @@ footer {
 		font-size: 1.7em;
 	}
 	.blogpostexcerpt {
-	}	
+	}
 }
 /* 700-600 */
 @media screen and (max-width: 700px) {
-	#page {
-		background-color: #eee;
-	}
+	/* * {background-color: #eee;} */
 	
+	#logo {
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+	#mainnav {
+		margin-right: 0;
+	}
+	#mainnav > * {
+		font-size: 1.05em;
+		margin-right: 0;
+	}
+	#topright > * {
+		font-size: 0.9em;
+	}
 	.blogpost {
 		margin-bottom: 10px;
 	}
 	.blogpostimg {
-		width: 30px;
-		margin-right: 8%;/*30px;*/
+		width: 16%;
+		margin-right: 4%;
 	}
 	.blogposttext {
-		/*width: 50%;/*630px;*/
-		width: 75%;
-		margin-left: 4%;
-		margin-right: 2%;
-		float: right;
-		/*background-color: red;*/
+		margin-right: 4%;
 	}
 	.blogposttitle {
-		font-size: 1.4em;
+		font-size: 1.5em;
 		font-weight: 400;
-		margin-top: -6px;
+		margin-top: -7px;
 	}
-	p.blogpostexcerpt {
-		font-size: 0.65em;
+	.blogpostexcerpt {
+		font-size: 0.7em;
 	}
 }
 /* 600-500 */
 @media screen and (max-width: 600px) {
+	header {
+		height: auto;
+	}
+	img#logo, nav#mainnav {
+		margin-top: 30px;
+	}
+	#topleft > * {
+		float: none;
+	}
+	#topright {
+		float: none;
+	}
+	img#logo {
+		width: 20%;
+		height: auto;
+		margin-left: 40%;
+		margin-right: 40%;
+	}
+	.blogpost {
+		margin-bottom: 40px;
+	}
+	.blogpostimg {
+		width: 20%;
+		margin-right: 4%;
+		margin-left: 1%;
+	}
+	.blogposttext {
+		width: 70%;
+		margin-right: 4%;
+	}
+}
+/* 500-400 */
+@media screen and (max-width: 500px) {
+	.blogpost {
+		margin-bottom: 40px;
+	}
+	.blogpostimg {
+		width: 22%;
+		margin-right: 6%;
+	}
+	.blogposttext {
+		width: 66%;
+		margin-right: 4%;
+	}
+}
+/* 400-300 PHONE */
+@media screen and (max-width: 400px) {
 	#page {
 		background-color: #eee;
 	}
 	
 	.blogpost {
-		margin-bottom: 10px;
+		height: 340px;
 	}
 	.blogpostimg {
-		width: 30px;
-		margin-right: 8%;/*30px;*/
+		float: none;
+		width: 33%;
+		padding-left: 34%;
+		margin-left: -2%;
+		margin-bottom: 20px;
 	}
 	.blogposttext {
-		width: 68%;
-		margin-right: 6%;
+		float: none;
+		width: 92%;
+		margin-left: 2%;
 		/*background-color: red;*/
 	}
-	.blogposttitle {
-		font-size: 1.4em;
-		font-weight: 400;
-		margin-top: -6px;
-	}
-	p.blogpostexcerpt {
-		font-size: 0.65em;
-	}
-}
-@media screen and (max-width: 555px) {
-	.blogpost {
-		padding: 0 5%;
-		height: 300px;
-	}
-	.blogpostimg > img {
-		width: 10%;
-		float: none;
-		margin: 0 auto;
-		padding: 0;
-	}
-	.blogposttext {
-		float: none;
-		width: 90%;
-		margin: 0;
-	}
-}
-/* 500-400 PHONE */
-@media screen and (max-width: 400px) {
-	#page {
-		background-color: #888;
+	.blogpost > * {
+		text-align: center;
 	}
 }
 
