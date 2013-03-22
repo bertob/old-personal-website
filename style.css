@@ -69,6 +69,10 @@ nav a {
 	margin-top: -10px;
 }
 /* ############ LAYOUT ############ */
+html, header, footer, #page {
+		margin-left: auto;
+		margin-right: auto;
+	}
 body {
 	max-width: 800px;
 	margin: 0 auto;
@@ -137,6 +141,7 @@ nav a:hover {
 }
 .blogposttext {
 	width: 630px;
+	margin-bottom: 20px;
 }
 .blogpostimg {
 	/*
@@ -304,25 +309,33 @@ footer {
 }
 
 
-
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-/* 800-600 TABLET */
+/* 860-700 */
 @media screen and (max-width: 860px) {
-	#page {
-		background-color: #aaa;
+	html, header, footer, #page {
+		margin-left: auto;
+		margin-right: auto;
 	}
-	
+	body, #wrap {
+		max-width: auto;
+	}
 	#page {
-		padding-left: 10px;
-		padding-right: 10px;
+		background-color: red;
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 	/* |||||||||||| HEADER |||||||||||| */
 	#topleft {
-		margin-left: 20px;
+		margin-left: 3%;
+	}
+	#topleft {
+		margin-left: 0px;
 	}
 	#topright {
-		margin-right: 20px;
+		margin-right: 3%;
 		margin-top: 38px;
 	}
 		
@@ -331,7 +344,7 @@ footer {
 		clear: both;
 		width: 100%;
 		padding-left: 2%;
-		padding-right: 2%;	
+		padding-right: 2%;
 		margin-bottom: 0px;
 	}
 	.blogpost:last-child {
@@ -342,10 +355,11 @@ footer {
 	}
 	.blogpostimg {
 		width: 15%;
-		margin-right: 2%;/*30px;*/
+		margin-right: 4%;/*30px;*/
 	}
 	.blogposttext {
 		width: 76%;/*630px;*/
+		background-color: blue;
 	}
 	.blogposttitle {
 		font-size: 1.7em;
@@ -370,6 +384,12 @@ footer {
 	}
 	#topright > * {
 		font-size: 0.9em;
+	}
+	#topleft {
+		
+	}
+	#logo {
+		margin-left: 0px;
 	}
 	.blogpost {
 		margin-bottom: 10px;
@@ -402,16 +422,20 @@ footer {
 	#topright {
 		float: none;
 	}
-	img#logo {
-		width: 10%;
-		height: auto;
-		margin-left: 45%;
-		margin-right: 45%;
+	#topleft {
+		margin-left: 0px;
 	}
-	img#logo, nav#mainnav {
+	img#logo {
+		width: 6%;
+		height: auto;
+		margin-left: 47%;
+		margin-right: 47%;
+	}
+	img#logo {
 		margin-top: 30px;
 	}
 	#mainnav {
+		margin-top: 0px;
 		padding: 0;
 		text-align: center;
 	}
