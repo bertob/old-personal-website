@@ -185,16 +185,19 @@ nav a:hover {
 }
 .workoverlay {
 	display: block;
-	opacity: 0.3;
+	height: 1000px;
+	opacity: 0.0;
 	position: absolute;
 	width: 240px;
 	background: rgb(0, 0, 0) transparent;
 	background: rgba(0, 0, 0, 0.6);
+	margin-top: -45px;
+	height: 45px;
 	
 	transition: all 0.5s ease-out;
-	/*transition-property : opacity;
+	transition-property : opacity;
 	transition-duration : 0.5s;
-	*/
+	
 	
 	transform: translateY(240px);
 }
@@ -203,16 +206,19 @@ nav a:hover {
 	opacity: 1;
 	background: rgb(0, 0, 0) transparent;
 	background: rgba(0, 0, 0, 0.6);
-	
+	/*
 	transition: all 0.3s ease-out;
 	/*transition-property : opacity; 
 	transition-duration : 0.3s;
 	*/
+	/*
 	-moz-transform: translateY(-100%);
 	-o-transform: translateY(-100%);
 	-webkit-transform: translateY(-100%);
+	*/
+	/*
 	opacity: 1;
-	transform: translateY(118%);	
+	transform: translateY(118%);*/
 }
 .overlaytext {
 	margin-left: 20px;
